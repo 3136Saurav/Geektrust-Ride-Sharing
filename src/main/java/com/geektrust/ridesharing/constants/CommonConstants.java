@@ -14,4 +14,6 @@ public class CommonConstants {
     public static final int THREE = 3;
     public static final int FOUR = 4;
     public static final int FIVE = 5;
+    public static final double FACTOR = 1.20;
+
 }
