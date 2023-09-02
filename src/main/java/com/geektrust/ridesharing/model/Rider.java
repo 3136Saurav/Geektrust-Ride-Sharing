@@ -1,10 +1,11 @@
-package com.geektrust.ridesharing.pojo;
+package com.geektrust.ridesharing.model;
 
 import java.util.Objects;
 
 public class Rider {
     private String riderId;
     private Location location;
+    private  boolean isActive;
 
     public Rider() {
     }
@@ -28,6 +29,14 @@ public class Rider {
 
     public void setLocation(Location location) {
         this.location = location;
+    }
+
+    public boolean isActive() {
+        return isActive;
+    }
+
+    public void setActive(boolean active) {
+        isActive = active;
     }
 
     @Override

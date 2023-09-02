@@ -1,4 +1,4 @@
-package com.geektrust.ridesharing.pojo;
+package com.geektrust.ridesharing.model;
 
 public class DriverRider {
     private double distanceBetweenRiderAndDriver;

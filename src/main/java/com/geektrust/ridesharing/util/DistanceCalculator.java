@@ -1,6 +1,6 @@
 package com.geektrust.ridesharing.util;
 
-import com.geektrust.ridesharing.pojo.Location;
+import com.geektrust.ridesharing.model.Location;
 
 public class DistanceCalculator {
 

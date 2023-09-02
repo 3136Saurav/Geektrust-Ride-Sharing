@@ -1,17 +1,20 @@
-package com.geektrust.ridesharing.pojo;
+package com.geektrust.ridesharing.model;
 
 import java.util.Objects;
 
 public class Driver {
     private String driverId;
     private Location location;
+    private  boolean isAvailable;
 
     public Driver() {
+        this.isAvailable = true;
     }
 
     public Driver(String driverId, Location location) {
         this.driverId = driverId;
         this.location = location;
+        this.isAvailable = true;
     }
 
     public String getDriverId() {
@@ -41,5 +44,13 @@ public class Driver {
     @Override
     public int hashCode() {
         return Objects.hash(driverId);
+    }
+
+    public boolean isAvailable() {
+        return isAvailable;
+    }
+
+    public void setAvailable(boolean available) {
+        isAvailable = available;
     }
 }

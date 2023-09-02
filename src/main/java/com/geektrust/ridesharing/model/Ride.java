@@ -1,12 +1,16 @@
-package com.geektrust.ridesharing.pojo;
+package com.geektrust.ridesharing.model;
+
+import com.geektrust.ridesharing.enums.RideStatus;
+import com.geektrust.ridesharing.services.DriverService;
 
 public class Ride {
     private String rideId;
-    private String riderId;
-    private String driverId;
+    private Rider rider;
+    private Driver driver;
     private Location source;
     private Location destination;
     private long timeTaken;
+    private RideStatus rideStatus;
 
     public String getRideId() {
         return rideId;
@@ -16,20 +20,20 @@ public class Ride {
         this.rideId = rideId;
     }
 
-    public String getRiderId() {
-        return riderId;
+    public Rider getRider() {
+        return rider;
     }
 
-    public void setRiderId(String riderId) {
-        this.riderId = riderId;
+    public void setRider(Rider rider) {
+        this.rider = rider;
     }
 
-    public String getDriverId() {
-        return driverId;
+    public Driver getDriver() {
+        return driver;
     }
 
-    public void setDriverId(String driverId) {
-        this.driverId = driverId;
+    public void setDriver(Driver driver) {
+        this.driver = driver;
     }
 
     public Location getSource() {
@@ -54,5 +58,13 @@ public class Ride {
 
     public void setTimeTaken(long timeTaken) {
         this.timeTaken = timeTaken;
+    }
+
+    public RideStatus getRideStatus() {
+        return rideStatus;
+    }
+
+    public void setRideStatus(RideStatus rideStatus) {
+        this.rideStatus = rideStatus;
     }
 }
